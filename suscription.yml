@@ -1,6 +1,6 @@
 - name: Register as user with password and auto-subscribe to available content.
   community.general.redhat_subscription:
     state: present
-    username: rhn-gps-dstefene 
-    password: $t3f3n3lL0
+    username:  
+    password: 
     auto_attach: true
