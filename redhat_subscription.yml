@@ -1,6 +1,9 @@
-- name: Register as user with password and auto-subscribe to available content.
-  community.general.redhat_subscription:
-    state: present
-    username: {{ user_name }} 
-    password: {{ user_password }} 
-    auto_attach: true
+- name: Register Host to RHN
+  hosts: all
+
+  tasks:
+  - name: Register host to RHN
+    redhat_subscription:
+      state: present
+      username: "my_username"
+      password: "my_password"
