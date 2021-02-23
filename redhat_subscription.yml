@@ -5,5 +5,5 @@
   - name: Register host to RHN
     redhat_subscription:
       state: present
-      username: "my_username"
-      password: "my_password" 
+      username: {{ my_username }}
+      password: {{ my_password }} 
